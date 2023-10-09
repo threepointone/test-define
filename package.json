@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "dev": "partykit dev",
-    "deploy": "partykit deploy"
+    "dev": "partykit dev --define process.env.MY_VAR=123 --define process.env.MY_STR=\"'abc'\"",
+    "deploy": "partykit deploy  --define process.env.MY_VAR=123 --define process.env.MY_STR=\"'abc'\""
   },
   "dependencies": {
     "partysocket": "0.0.9"
